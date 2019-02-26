@@ -1,7 +1,7 @@
 require_relative 'config/environment'
 
 class App < Sinatra::Base
-  # Write your code here!
+   # Write your code here!
    get '/reversename/:name' do
       @name = params[:name]
       @name.reverse
@@ -49,5 +49,6 @@ class App < Sinatra::Base
       when "divide"
         (@num1 / @num2).to_s
       end 
-    end 
+    end
+    
 end
