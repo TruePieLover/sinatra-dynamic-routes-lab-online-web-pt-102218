@@ -10,7 +10,6 @@ class App < Sinatra::Base
     get '/square/:number' do 
       @number = params[:number].to_i
       (@number * @number).to_s
-      # Multiply the number by itself= square 
      end 
   
     get '/say/:number/:phrase' do 
@@ -30,8 +29,7 @@ class App < Sinatra::Base
       word3 = params[:word3]
       word4 = params[:word4]
       word5 = params[:word5]
-  
-       "#{word1} #{word2} #{word3} #{word4} #{word5}."
+      "#{word1} #{word2} #{word3} #{word4} #{word5}."
     end 
   
     get '/:operation/:num1/:num2' do 
